@@ -6,11 +6,12 @@ public class display_class {
 	boolean go =true;
 	public void display()    //this method display main menu
 	{
+		do {
 		System.out.println("==========================================\nThese are some operation u can performe on file");
-	do {
+	
 		System.out.println("\n1)Display all file names\n"
 				+ "2)OperationsOnFiles\n3)Exit");
-	
+		
 		System.out.println("Enter your Choice:\n");
 		Scanner sc=new Scanner(System.in);
 		int i=sc.nextInt();

@@ -23,21 +23,21 @@ public class opetion_Handling {
 		     String s=sc.nextLine();
 		    // System.out.println(s);
 		     add a=new add();
-		     a.file_add(s,sc);
+		     a.file_add(s);
 		 
 		 break;
 
 		case 2:
 			 System.out.println("Enter the File Name You Wnat to Delete\n");
 		     Scanner sc2=new Scanner(System.in);
-			 String sd= sc2.nextLine();
+			 String sd= sc2.next();
 		     fileDelOperation fd=new fileDelOperation();
 			 fd.delOperation(sd);
 		break;
 		case 3:
 			 System.out.println("Enter the File Name You Wnat to Search\n");
 		     Scanner sc3=new Scanner(System.in);
-			 String ss= sc3.nextLine();
+			 String ss= sc3.next();
 		     fileSearchOperation fs=new fileSearchOperation();
 			 fs.searchOperation(ss);
 			break;

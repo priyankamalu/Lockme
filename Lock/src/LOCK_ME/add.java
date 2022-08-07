@@ -9,15 +9,16 @@ import java.util.Scanner;
 
 public class add {
 	
-	public void file_add(String s,Scanner sc) // method to add file in main1 menu
+	public void file_add(String s) // method to add file in main1 menu
 	
 	{
 		add.ismainExists("main1");   // checking main1 menu exists or not
-		Path newPath = Paths.get("C:\\Users\\AJAY\\eclipse-workspace1\\Lock./main1/"+s);
+		Path newPath = Paths.get("C:\\Users\\AJAY\\git\\Lockme\\Lock./main1/"+s);
 		File f1=new File(newPath.toString());
 		try 
 		{
 			f1.createNewFile();
+			System.out.println("File created succesfully ");
 		} 
 		catch (IOException e)
 		{

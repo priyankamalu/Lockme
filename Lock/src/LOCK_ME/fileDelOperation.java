@@ -8,22 +8,22 @@ import java.util.regex.Pattern;
 
 public class fileDelOperation 
 {
-	String fname;
+	 public String fname;
+
 	public void delOperation(String s)
-	{   
-	    this.fname=s;
+	{ fname=s;
     	Path p= Paths.get("main1");
 		String ss=p.toString();
 	   File f=new File(ss);
 	   f.getAbsolutePath();
-	   Path path1=Paths.get("C:\\Users\\AJAY\\eclipse-workspace1\\Lock./main1/"+s);
+	   Path path1=Paths.get("C:\\Users\\AJAY\\git\\Lockme\\Lock./main1/"+s);
        File f2=new File(path1.toString());
 	   String[] b= f.list();
 	   boolean i=false;
      for(String string:b)
-     {
+     {     System.out.println(string);
     	 if(string.equals(fname))   //case sensitivity checked
-    	 {
+    	 {      
     		 i=true;
     	 }
      }
@@ -34,9 +34,9 @@ public class fileDelOperation
 	             System.out.println(s+"\tFile deleted succesfully");
                }
            else
-              {
-	             System.out.println(s+"->File is not in the directory");
-              }
+           {
+        	   System.out.println(s+"->file is not in directory");
+           }
         }
      else
      {

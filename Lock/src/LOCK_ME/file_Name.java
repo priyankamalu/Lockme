@@ -11,6 +11,7 @@ public class file_Name {
 		String ss=p.toString();
 	   File f=new File(ss);
 	   f.getAbsolutePath();
+	   System.out.println(f.getAbsolutePath());
 	
 	  String[] b= f.list();
 	
