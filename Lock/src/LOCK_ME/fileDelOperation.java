@@ -21,7 +21,7 @@ public class fileDelOperation
 	   String[] b= f.list();
 	   boolean i=false;
      for(String string:b)
-     {     System.out.println(string);
+     {    
     	 if(string.equals(fname))   //case sensitivity checked
     	 {      
     		 i=true;

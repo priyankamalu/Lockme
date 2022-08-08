@@ -3,10 +3,16 @@ package LOCK_ME;
 import java.util.Scanner;
 
 public class opetion_Handling {
+	 boolean go=true;
 	
- public	void opetion() //this method prints secondary menu 
+ public	void opetion(boolean t) //this method prints secondary menu 
 	{ 
-	    boolean go=true;
+	   
+	    this.go=t;
+	    if(go==false)
+	    	System.exit(0);
+	    else
+	    {
 		do 
 		{
 		System.out.println("Enter appropriate no to do specific function");
@@ -47,8 +53,8 @@ public class opetion_Handling {
              ds.display();
 		 break;		
 		}
-	    }while(go==true);   // to run menu as many times as user wants
-		
+	    }while(go!=false);   // to run menu as many times as user wants
+	    }
 	}
 
 }

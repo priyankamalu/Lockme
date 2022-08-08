@@ -24,13 +24,14 @@ public class display_class {
 		else if(i==2)
 		{
 		opetion_Handling o=new opetion_Handling();
-		o.opetion();
+		o.opetion(true);
 		}
 		else if(i==3)
 		{
             System.out.println("You chossen Exit operation Out Of Program Now");
 			go = false;
-			
+			opetion_Handling o=new opetion_Handling();
+			o.opetion(false);
 			
 		}
 	}while(go==true);
